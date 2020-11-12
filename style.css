@@ -24,6 +24,13 @@ body {
   padding: 15px;
   font-size: 15px;
 }
+.hamburger-div {
+  display: none;
+}
+
+.hamburger-nav-bar {
+  display: none;
+}
 
 .img-name {
   color: white;
@@ -36,22 +43,107 @@ body {
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
+  .hamburger-div {
+    display: block;
+  }
+
+  .hamburger-div:hover .hamburger-nav-tittle {
+    display: block;
+  }
+
+  .hamburger {
+    margin-right: 2%;
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+
+  .hamburger-lines {
+    width: 80%;
+    border: 1px solid white;
+  }
+
+  .hamburger-div:hover .hamburger-lines {
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+  }
+
+  .hamburger-div:hover .line1 {
+    transform: rotate(45deg);
+  }
+
+  .hamburger-div:hover .line3 {
+    transform: rotate(-45deg);
+  }
+
+  .hamburger-div:hover .line2 {
+    display: none;
+  }
+
+  .ban-img {
+    height: 50px;
+    margin-top: 200px;
+    padding-top: 300px;
+    padding-right: 20px;
+    width: 120vh;
+    flex-direction: column;
+  }
+
+  .footer-back {
+    margin-left: 150px;
+  }
+  .broswe-job {
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+  .Grid {
+    margin-left: 100px;
+  }
+  .container-box1 {
+    padding-top: 170px;
+    color: red;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 250px;
+    padding-bottom: 20px;
+  }
+
+  .cc-head {
+    font-family: sans-serif;
+    text-align: center;
+    padding-left: 250px;
+    padding-bottom: 20px;
+  }
+
+  .cc-con {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 250px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .img-name {
+    margin-left: 200px;
+  }
   .header-section {
     flex-direction: column;
     height: 200px;
+    width: 120vh;
   }
 
   .banner {
     flex-direction: column;
-    width: auto;
-  }
-  .ban-img {
-    height: 50px;
-    margin-top: 100px;
-    padding-top: 50px;
-    width: auto;
-    flex-direction: column;
+    width: 120vh;
   }
 
   .ban-con {
@@ -256,8 +348,10 @@ a {
   height: 40px;
   font-size: 15px;
   color: white;
-  align-items: center;
-  margin-left: 600px;
+}
+.git-logo {
+  text-align: center;
+  margin-left: 100px;
   margin-top: 20px;
 }
 
